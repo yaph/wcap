@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# Example call: wcap --dimensions 1500x1100 --wait 5 https://ukealong.com/key/d/ img/d.png
 import argparse
 import time
 
@@ -34,7 +33,7 @@ def main():
     parser.add_argument('--dimensions', '-d', type=str, default=DIMENSIONS)
     parser.add_argument('--wait', '-w', type=int, default=WAIT)
     args = parser.parse_args()
-    capture(args.url, args.img_file, args.dimensions, args.wait)
+    capture(args.url, args.image, args.dimensions, args.wait)
 
 
 if __name__ == '__main__':

@@ -1,6 +1,9 @@
 # Directories
 img/
 
+# Files
+*.log
+
 *.py[cod]
 
 # C extensions
