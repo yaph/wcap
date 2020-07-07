@@ -32,6 +32,10 @@ dist: clean ## builds source and wheel package
 	ls -l dist
 
 
+lint: ## check style with flake8
+	flake8 wcap
+
+
 install: clean ## install the package to the active Python's site-packages
 	python setup.py install
 
@@ -47,3 +51,7 @@ test:
 	wcap --dimensions 1500x1100 --wait 5 https://ukealong.com/key/c/ img/c.png
 	wcap --dimensions 1500x1100 https://ukealong.com/key/d/ img/d.png
 	wcap https://ukealong.com/key/e/ img/e.png
+
+
+typecheck:
+	mypy --ignore-missing-imports wcap

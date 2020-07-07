@@ -1,10 +1,6 @@
 pip
 wheel
 flake8
-tox
-coverage
+ipython
 twine
 mypy
-
-pytest
-pytest-runner
