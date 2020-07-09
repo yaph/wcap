@@ -40,7 +40,7 @@ install: clean ## install the package to the active Python's site-packages
 	python setup.py install
 
 
-# Call example: make release version=0.1.0
+# Call example: make release version=0.2.0
 release: dist
 	git tag -a $(version) -m 'Create version $(version)'
 	git push --tags
